@@ -1,3 +1,4 @@
 .venv
 .DS_Store
 local_settings.py
+bot_info.py
