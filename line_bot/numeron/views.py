@@ -11,6 +11,8 @@ from .models import Numeron
 from .request_create import LineMessage, create_text_message
 from .validators import validate_or_process_message
 from .bot_info import channel_secret
+from django.contrib.auth.backends import ModelBackend
+from django.contrib.auth.views import LoginView
 
 # djangoのpostはcsrf_tokenを必要としているがLINEのpostリクエストではcsrfできない。→csrfの例外として設定。
 @csrf_exempt
